@@ -1,0 +1,24 @@
+h1 {
+	font-family: 'permanent_markerregular';
+
+}
+
+body {
+	background: url('/assets/brickwall_@2X.png');
+}
+
+.navbar.navbar-default {
+  border-radius: 0;
+  box-shadow: 0px 5px 5px #7a8080;
+}
+
+.navbar-default .navbar-brand {
+	font-family: 'rock_saltregular';
+	font-size: 24px;
+	
+}
+
+@viewport {
+  zoom: 1.0;
+  width: extend-to-zoom;
+  }
