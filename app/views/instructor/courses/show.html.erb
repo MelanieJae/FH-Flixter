@@ -22,21 +22,16 @@
 				</li>
 			<% end %>
 		</ul>
+
+		<% current_course.images.each do |image| %>
+			<%= image_tag current_course.image %>
+			<%= image.caption %>
+		<% end %>
+
 		<br class="clr" />
 			
 		<% end %>
 	</ul>
-
-	<%= simple_form_for @image, :url => instructor_course_images_path(current_course) do |f| %>
-            <div class="main-box">
-              <%= f.input :caption %>	
-              <%= f.input :image %> 
-            </div>
-        <div class="footer">
-          <button type="button" class="btn btn-default">Close</button>
-          <%= f.submit "Upload image", :class => 'btn btn-default' %>
-        </div>        
-     <% end %>
      
 
 </div>

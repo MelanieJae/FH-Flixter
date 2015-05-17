@@ -9,9 +9,8 @@
 # production:
 #   stripe_api_key: sk_live_EeHnL644i6zo4Iyq4v1KdV9H
 #   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
-GEOCODER_API_KEY: "Ar5cpePkrfUUFrX5uhLzgAF16g4kRb1qeybUSXQfmZncNGS4al6eSaEtn0aTR1iO"
 GMAIL_ADDRESS: "mtaurus575@gmail.com"
-GMAIL_PASSWORD: "Cockatoucan3212"
-AWS_ACCESS_KEY: "AKIAISYD4M2F2M7I6BSA"
-AWS_SECRET_KEY: "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"
-AWS_BUCKET: "mjh-flixter"
+GMAIL_PASSWORD: "Willoughby#7331"
+AWS_ACCESS_KEY: "AKIAIG2FC326UPGVXO4A"
+AWS_SECRET_KEY: "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"
+AWS_BUCKET: "mjh-nomster"
