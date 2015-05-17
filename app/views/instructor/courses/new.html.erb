@@ -8,17 +8,7 @@
     	<%= f.submit "Create", :class => 'btn btn-primary' %>
     	<br />
 
-	<%= simple_form_for @image, :url => instructor_course_images_path(current_course) do |f| %>
-            <div class="main-box">
-            	<h1>Upload image here</h1>
-              <%= f.input :caption %>	
-              <%= f.input :image %> 
-            </div>
-        <div class="footer">
-          <button type="button" class="btn btn-default">Close</button>
-          <%= f.submit "Upload image", :class => 'btn btn-default' %>
-        </div>        
-     <% end %>
+	
 
    	<% end %>
   	<br />
