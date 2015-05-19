@@ -1,2 +1,0 @@
-module Instructor::ImagesHelper
-end
