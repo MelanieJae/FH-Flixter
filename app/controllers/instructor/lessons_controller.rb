@@ -7,7 +7,7 @@ class Instructor::LessonsController < ApplicationController
 	end
 
 	def create
-		@lesson = current_section.lessons.create(lesson_params)
+		@lesson = @current_section.lessons.create(lesson_params)
 		redirect_to lesson_path
 	end
 
@@ -22,6 +22,11 @@ class Instructor::LessonsController < ApplicationController
 	helper_method :current_section
 	def current_section
 		@current_section ||= Section.find(params[:section_id])
+	end
+
+	helper_method :current_lesson
+	def current_lesson
+		@current_lesson ||= Lesson.find(params[:id])
 	end
 
 	def lesson_params
