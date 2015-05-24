@@ -6,7 +6,7 @@
 	<%= link_to 'Preview as Student', course_path(@current_course), :class => 'btn btn-warning pull-right' %>
 	<div class="text-center">
 		<%= link_to 'Add a new section', new_instructor_course_section_path(@current_course), :class => "btn btn-warning pull-right" %>
-		
+
 	</div>
 	
 	<div class="row">
@@ -21,6 +21,8 @@
 		<% @current_course.sections.each do |section| %>
 			<li>
 				<%= section.title %>
+				<%= link_to 'New Lessons', new_instructor_section_lesson_path(section), :class => 'pull-right btn btn-warning btn-xs' %> 
+					
 			</li>
      	<ul>
 			<% section.lessons.each do |lesson| %>
@@ -30,12 +32,11 @@
 					<%= lesson.subtitle %>
 				</li>
 			<% end %>
-	
-
 		</ul>
+		<br class="clr" />
 		<% end %>
 
-		<br class="clr" />
+		
 			
 		
 	</ul>
