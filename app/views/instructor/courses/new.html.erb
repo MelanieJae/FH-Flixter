@@ -6,7 +6,12 @@
 	    <%= f.input :description %>
 	    <%= f.input :cost %> 
       <%= f.input :image %> 
-    	<%= f.submit "Create", :class => 'btn btn-primary' %>
+<% if false %>    	
+      <%= f.submit "Upload image", :class => 'btn btn-default' %>
+            <br />
+    </div>
+<% end %>
+      <%= f.submit "Create", :class => 'btn btn-primary' %>
         </div>        
   <% end %>
 
