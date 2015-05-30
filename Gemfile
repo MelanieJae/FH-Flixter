@@ -32,7 +32,7 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'autoprefixer-rails'
 
-gem 'devise'
+gem 'devise', '>= 3.2.4'
 
 gem 'simple_form'
 
@@ -43,6 +43,8 @@ gem 'figaro'
 gem 'mini_magick'
 
 gem 'carrierwave-aws'
+
+gem 'stripe'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
