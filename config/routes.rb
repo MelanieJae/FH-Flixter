@@ -1,12 +1,13 @@
 Flixter::Application.routes.draw do
 
   devise_for :users
+  resource :dashboard, :only => [:show]
   root 'start_pages#index'
   resources :users, :only => :show
   resources :courses, :only => [:index, :show] do
     resources :enrollments, :only => :create
   end
-  resources :courses, :only => [:update]
+  
   resources :lessons, :only => [:show]
   namespace :instructor do
       resources :lessons, :only => [:update]
