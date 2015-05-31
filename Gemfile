@@ -21,8 +21,10 @@ gem 'coffee-rails', '~> 4.0.0'
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-# Use jquery as the JavaScript library
+# Use jquery and jquery UI as the JavaScript libraries
 gem 'jquery-rails'
+
+gem 'jquery-ui-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 # gem 'turbolinks'
@@ -45,6 +47,8 @@ gem 'mini_magick'
 gem 'carrierwave-aws'
 
 gem 'stripe'
+
+gem 'ranked-model'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
