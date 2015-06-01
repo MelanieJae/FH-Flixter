@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Flixter</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true  %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
   <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
@@ -68,12 +68,41 @@
 <%= yield %>
 </div>
 <br class="clr" />
+
 <div id="footer">
-    <div class="container">
+  <div class="col-xs-12 col-sm-3 footer-content">
       <b><u>Teachers</u></b>
       <br />
       <%= link_to 'Teach a Course', new_instructor_course_path %>
-    </div>
+      <br />
+      <%=link_to 'My Dashboard', dashboard_path %>
   </div>
+  <div class="col-xs-12 col-sm-3 footer-content">
+    <b>About</b>
+    <br />
+    <%= link_to 'Team', '#' %>
+    <br />
+    <%= link_to 'Careers', '#' %>
+    <br />
+    <%= link_to 'Privacy Policy', '#' %>
+  </div>
+  <div class="col-xs-12 col-sm-3 footer-content">
+    <b>Contact</b>
+    <br />
+    mtaurus575@mac.com
+    <br />
+    565 Clay St.
+    <br />
+    San Francisco, CA 94111
+  </div>
+  <div class="col-xs-12 col-sm-3 footer-content">
+    <b>Social</b>
+    <br />
+    <br /> 
+    <%= link_to 'http://github.com/melaniejae' do %>
+      <%= image_tag 'github.png', :class => 'social-button' %>
+    <% end %>
+  </div> 
+</div>  
 </body>
 </html>
