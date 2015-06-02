@@ -70,39 +70,41 @@
 <br class="clr" />
 
 <div id="footer">
-  <div class="col-xs-12 col-sm-3">
-      <b><u>Teachers</u></b>
+  <div class="container">
+    <div class="col-xs-12 col-sm-3">
+        <b><u>Teachers</u></b>
+        <br />
+        <%= link_to 'Teach a Course', new_instructor_course_path %>
+        <br />
+        <%=link_to 'My Dashboard', dashboard_path %>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+      <b>About</b>
       <br />
-      <%= link_to 'Teach a Course', new_instructor_course_path %>
+      <%= link_to 'Team', '#' %>
       <br />
-      <%=link_to 'My Dashboard', dashboard_path %>
-  </div>
-  <div class="col-xs-12 col-sm-3">
-    <b>About</b>
-    <br />
-    <%= link_to 'Team', '#' %>
-    <br />
-    <%= link_to 'Careers', '#' %>
-    <br />
-    <%= link_to 'Privacy Policy', privacy_path %>
-  </div>
-  <div class="col-xs-12 col-sm-3">
-    <b>Contact</b>
-    <br />
-    mtaurus575@mac.com
-    <br />
-    565 Clay St.
-    <br />
-    San Francisco, CA 94111
-  </div>
-  <div class="col-xs-12 col-sm-3">
-    <b>Social</b>
-    <br />
-    <br /> 
-    <%= link_to 'http://github.com/melaniejae' do %>
-      <%= image_tag 'github.png', :class => 'social-button' %>
-    <% end %>
-  </div> 
+      <%= link_to 'Careers', '#' %>
+      <br />
+      <%= link_to 'Privacy Policy', privacy_path %>
+    </div>
+    <div class="col-xs-12 col-sm-3">
+      <b>Contact</b>
+      <br />
+      mtaurus575@mac.com
+      <br />
+      565 Clay St.
+      <br />
+      San Francisco, CA 94111
+    </div>
+    <div class="col-xs-12 col-sm-3">
+      <b>Social</b>
+      <br />
+      <br /> 
+      <%= link_to 'http://github.com/melaniejae' do %>
+        <%= image_tag 'github.png', :class => 'social-button' %>
+      <% end %>
+    </div>
+  </div>   
 </div>  
 </body>
 </html>

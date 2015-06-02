@@ -8,7 +8,6 @@
 
 		$('.lessons').sortable({
 			update: function( event, ui ) {
-				alert("UpdateUrl: " + ui.item.data('update-url') + " Index: " + ui.item.index());
 				$.ajax({
 					type: 'PUT',
 					url: ui.item.data('update-url'),
@@ -36,7 +35,7 @@
 	<%= link_to 'Preview as Student', course_path(current_course), :class => 'btn btn-warning pull-right' %>
 	
 	<ul>
-		<% current_course.sections.each do |section| %>
+		<% current_course.sections.rank(:row_order).each do |section| %>
 			<li>
 				<div class="header pull-left">
 
