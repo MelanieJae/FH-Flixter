@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Flixter</title>
-  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true  %>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
   <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
@@ -64,7 +64,7 @@
 <% if alert.present? %>
   <p class="alert alert-danger"><%=alert %></p>
 <% end %>
-
+</body>
 <%= yield %>
 </div>
 <br class="clr" />
@@ -96,7 +96,7 @@
       <br />
       San Francisco, CA 94111
     </div>
-    <div class="col-xs-12 col-sm-3">
+    <div class="col-xs-12 col-sm-3 social">
       <b>Social</b>
       <br />
       <br /> 
@@ -106,5 +106,5 @@
     </div>
   </div>   
 </div>  
-</body>
+
 </html>
