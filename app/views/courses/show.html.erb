@@ -2,17 +2,13 @@
 
 <div class="frosty text-center col-xs-12">
   <h1><%= @course.title %></h1>
-    <%= image_tag @course.image, :class => 'img-responsive' %>
-  <br />
-  
-
-  <div class="clear"></div>
-
-  <div class="text-right col-sm-6 col-xs-12">
-   	<span class="label label-default">
-   		<h3><%= number_to_currency @course.cost %></h3>
-  	</span>
-  
+    <div class="text-right col-sm-6 col-xs-12">
+   	  <span class="label label-default text-center">
+   		 <h3><%= number_to_currency @course.cost %></h3>
+       <%= image_tag @course.image, :class => 'img-responsive' %>
+ 
+  	   </span>
+    </div>
 
 <%-# Administer button # %>
     <% if current_user && current_user == @course.user %>
